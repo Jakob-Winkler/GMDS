@@ -234,7 +234,7 @@ df_short_broken <- data.frame(
 )
 
 # Sol:
-# The treatment effect after switching is different, so the treatment is not consistent. And this is rpsft's assumption
+# The treatment effect after switching is different, so their is no common treatment effect. And this is rpsft's key assumption
 
 # 1.8
 # Now fit all 3 models to the new data. What can you notice about the diffrent HR?
@@ -258,5 +258,6 @@ fit_ipcw_broken <- ipcw(
 
 fit_ipcw_broken$hr
 fit_ipcw_broken$hr_CI
+
 
 
